@@ -1,15 +1,11 @@
-import type { AppProps } from 'next/app';
-import {NextUIProvider} from '@nextui-org/react';
-import {useRouter} from 'next/router';
+import Footer from "./Components/Footer/Footer";
+import NavBar from "./Components/NavBar/NavBar";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-
+export default function Home() {
   return (
-    <NextUIProvider navigate={router.push}>
-      <Component {...pageProps} />
-    </NextUIProvider>
-  )
+    <div>
+      <NavBar />
+      <Footer />
+    </div>
+  );
 }
-
-export default MyApp;
