@@ -1,5 +1,9 @@
-const NavBar = () => {
-    return <div></div>;
-  };
-  
-  export default NavBar;
+import React from "react";
+import { Button } from "@nextui-org/react";
+
+export default function NavBar() {
+  return (
+    <div>
+    </div>
+  );
+}
